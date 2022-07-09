@@ -7,6 +7,7 @@
     <style type="text/css">
         * {
             box-sizing: border-box;
+            
         }
 
         body {
@@ -29,8 +30,12 @@
         .wrapper {
             width: 100%;
             table-layout: fixed;
+            max-width: 700px;
+            margin: 0 auto;
             
         }
+
+        
 
         .main {
             margin: 0 auto;
@@ -48,6 +53,15 @@
             align-items: center;
             padding-top: 30px;
             padding-bottom: 30px;
+            width: 100%;
+            max-width: 700px;
+            margin:0;
+        }
+
+        .destinations {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
         }
 
         .logo {
@@ -74,12 +88,17 @@
             background-position: center;
             background-size: cover;
             height: 50vh;
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
         }
 
         .row {
-            width: 700px;
+            width: 100%;
+            max-width: 640px;
+            margin: auto;
             text-align: center;
-            padding-left: 40px;
+            padding-left: 20px;
             margin: auto;
             display: flex;
             flex-direction: row;
@@ -140,7 +159,6 @@
             padding-top: 50px;
             padding-bottom: 50px;
             padding-left: 40px;
-            
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -151,7 +169,20 @@
             border-radius: 50%;
         }
 
+        .travel-banner {
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .footer {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
         /* MEDIA QUERY */
+
+       
 
        
         
@@ -171,7 +202,7 @@
         <table class="main">
             <tr>
                 <td>
-                    <table  width="100%">
+                    <table width="100%">
                         <tr class="navbar">
                             <td style="padding-left: 30px;">
                                 <a class="logo" href="#">TRAVEL</a>
@@ -201,7 +232,7 @@
                 </td>
             </tr>
 
-            <tr>
+            <tr class="banner-desc">
                 <td align="center" style="background-color: hsl(0,0%,19%); padding-top: 50px; padding-bottom: 50px;">
                     <h1 style="font-size:24px;color:#fff;">Welcome To Travel Agency</h1>
                     <p style="width: 100%; max-width: 540px; line-height: 25px; color:#d1d1d1 ;">A small river named Duden flows by their place and supplies it with the necessary 
@@ -403,7 +434,7 @@
                     <table>
                         <tr>
                             <td>
-                                <table>
+                                <table class="travel-banner">
                                     <tr class="bannerThree">
                                         <td>
                                             <img src="/images/bg_2.jpg" alt="background 2" width="320">
@@ -419,10 +450,6 @@
                                             <p style="color:#a79f9f;">A small river named Duden flows by their place and supplies</p>
                                         </td>
                                     </tr>
-                                            
-
-
-                                        
                                 </table>
                             </td>
                         </tr>
@@ -432,10 +459,10 @@
 
             <tr>
                 <td>
-                    <table width="100%" style="background-color:#000;">
+                    <table class="footer" width="100%" style="background-color:#000;">
                         <tr>
                             <td>
-                                <table>
+                                <table >
                                     <tr>
                                         <td>
                                             <table style="color:#fff; width: 100%; max-width: 700px; padding-left: 60px; padding-top: 60px; padding-bottom: 60px;">
@@ -451,7 +478,7 @@
                                                         <span><strong>Contact Info</strong></span>
                                                         <p style="padding-top: 30px;padding-bottom: 140px;line-height: 30px; color: #a79f9f;">203 Fake St. Mountain View, San Francisco, California, USA
                                                             +2 392 3929 210</p>
-                                                            <a href="#" style="color: #a79f9f; text-decoration:none; float:right">Unsubscribe</a>
+                                                        <a href="#" style="color: #a79f9f; text-decoration:none; float:right">Unsubscribe</a>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -463,11 +490,7 @@
                     </table>
                 </td>
             </tr>
-                        
-
         </table>
-
     </div>
-    
 </body>
 </html>
