@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Agency Email</title>
     <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             background-color: #f1f1f1;
@@ -127,15 +131,32 @@
             border-color: transparent;
         }
 
-        .tourist-section {
-            border: thin solid red;
+      
+
+        .tourist-content,
+        .bannerThree {
+            width: 700px;
+        
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 40px;
             
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
         }
 
-        .tourist-section img {
+        .tourist-content img {
             border-radius: 50%;
-            
         }
+
+        /* MEDIA QUERY */
+
+       
+        
+
+       
             
 
             
@@ -297,7 +318,7 @@
                 </td>
             </tr>
 
-            <tr>
+            <tr >
                 <td align="center" style="background-color: #fff; padding-top: 50px; padding-bottom: 50px;">
                     <h1 style="font-size:24px;color:#000;">Our Blog</h1>
                     <p style="width: 100%; max-width: 540px; line-height: 25px; color:#a79f9f;">A small river named Duden flows by their place and supplies 
@@ -337,22 +358,106 @@
                 </td>
             </tr>
 
-            <tr class="tourist-section">
-                <td >
-                    <table>
-                        <tr style="text-align:center ;">
-                            <td style=" padding-top: 50px; padding-bottom: 50px; border: thin solid red;">
+            <tr>
+                <td>
+                    <table width="100%" style="background-color:#fafafa;">
+                        <tr>
+                            
+                            <td style="padding-top: 50px; text-align: center;">
                                 <h1 style="font-size:24px;color:#000;">Happy Tourist</h1>
-                                <p style="width: 100%; max-width: 540px; line-height: 25px; color:#a79f9f;">A small river named Duden flows by their place and supplies 
-                                    it with the necessary regelialia.</p>
+                                <p style=" line-height: 25px; color:#a79f9f; width: 100%; max-width: 480px; margin: auto;">A small river named Duden flows by their place and supplies 
+                                it with the necessary regelialia.</p>
                             </td>
+                                               
                         </tr>
+
                         <tr>
                             <td>
-                                <img src="/images/person_1.jpg" alt="Person 1 Image" width="150">
+                                <table >
+                                    <tr class="tourist-content">
+                                        <td style="width: 100%; max-width:320px">
+                                            <img src="/images/person_1.jpg" alt="Person 1 Icon" width="120">
+                                            <h1 style="font-weight:600; font-size:20px">Ronald Tuff</h1>
+                                            <p style="color:#a79f9f;">Businessman</p>
+                                            <p style="line-height: 30px; color:#a79f9f; width: 100%; max-width: 260px;">Far far away, behind the word mountains, far from the countries</p>
+                                        </td>
+
+                                        <td style="width:100%; max-width:320px">
+                                            <img src="/images/person_2.jpg" alt="Person 2 Icon" width="120">
+                                            <h1 style="font-weight:600; font-size:20px">Willam Clarson</h1>
+                                            <p style="color:#a79f9f;">Businessman</p>
+                                            <p style="line-height: 30px; color:#a79f9f; width: 100%; max-width: 260px;">Far far away, behind the word mountains, far from the countries</p>
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
+                        </tr>
+                    </table>
+
+                                    
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table>
+                        <tr>
                             <td>
-                                <img src="/images/person_2.jpg" alt="Person 2 Image" width="150">
+                                <table>
+                                    <tr class="bannerThree">
+                                        <td>
+                                            <img src="/images/bg_2.jpg" alt="background 2" width="320">
+                                        </td>
+
+                                        <td style="width:100%; max-width:320px; line-height:30px">
+                                            <h1>Things to know before traveling</h1>
+                                            <span style="font-size:20px;"><strong>1. Pack up your things</strong></span>
+                                            <p style="color:#a79f9f;">A small river named Duden flows by their place and supplies</p>
+                                            <span style="font-size:20px;"><strong>2. Search for Destination</strong></span>
+                                            <p style="color:#a79f9f;">A small river named Duden flows by their place and supplies</p>
+                                            <span style="font-size:20px;"><strong>3. Be Responsible</strong></span>
+                                            <p style="color:#a79f9f;">A small river named Duden flows by their place and supplies</p>
+                                        </td>
+                                    </tr>
+                                            
+
+
+                                        
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table width="100%" style="background-color:#000;">
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <table style="color:#fff; width: 100%; max-width: 700px; padding-left: 60px; padding-top: 60px; padding-bottom: 60px;">
+                                                <tr>
+                                                    <td style="width:320px;" >
+                                                        <span><strong>About</strong></span>
+                                                        <p style="padding-top: 30px; padding-bottom: 140px; line-height: 30px; color: #a79f9f;">A small river named Duden flows by their place and supplies it with the necessary 
+                                                            regelialia.</p>
+                                                        <span style="color: #a79f9f;">© 2022 Travel. All Rights Reserved</span>
+                                                    </td>
+
+                                                    <td style="width:220px; padding-left: 20px;">
+                                                        <span><strong>Contact Info</strong></span>
+                                                        <p style="padding-top: 30px;padding-bottom: 140px;line-height: 30px; color: #a79f9f;">203 Fake St. Mountain View, San Francisco, California, USA
+                                                            +2 392 3929 210</p>
+                                                            <a href="#" style="color: #a79f9f; text-decoration:none; float:right">Unsubscribe</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                     </table>
